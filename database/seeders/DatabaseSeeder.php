@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
+use App\Models\Product;
 use App\Models\User;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
@@ -27,6 +28,12 @@ class DatabaseSeeder extends Seeder
             "email" => "admin@admin.com",
             "password" => Hash::make("admin123"),
             "role_id" => 1
+        ]);
+
+        Product::create([
+            "nama"  => "Pepsodent",
+            "deskripsi"  => "Pepsodent Pencegah Gigi Berlubang.",
+            "harga"  => "5000",
         ]);
 
         $this->call([

@@ -16,7 +16,13 @@ import { createApp } from 'vue';
 const app = createApp({});
 
 import ExampleComponent from './components/ExampleComponent.vue';
+import ProductIndexComponent from './components/ProductIndexComponent.vue';
+import ProductCreateComponent from './components/ProductCreateComponent.vue';
+import ProductEditComponent from './components/ProductEditComponent.vue';
 app.component('example-component', ExampleComponent);
+app.component('product-index-component', ProductIndexComponent);
+app.component('product-create-component', ProductCreateComponent);
+app.component('product-edit-component', ProductEditComponent);
 
 /**
  * The following block of code may be used to automatically register your
